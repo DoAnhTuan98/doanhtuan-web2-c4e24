@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Character list</title>
+</head>
+<body>
+    {% for characters in characters_list %}
+     <h4>{{ characters["name"] }}</h4>
+     <img src="{{ characters['image'] }} " />
+     <a href="{{ characters['link'] }}">link</a>
+    {% endfor %}
+</body>
+</html>
